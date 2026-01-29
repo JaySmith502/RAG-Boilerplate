@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** External users can interact with the document Q&A system through an intuitive, modern interface
-**Current focus:** Phase 1 - Foundation (Complete with gap-closure)
+**Current focus:** Phase 2 - Chat Interface (In progress)
 
 ## Current Position
 
-Phase: 1 of 6 (Foundation)
-Plan: 4 of 4 in current phase
-Status: Phase complete (including gap-closure)
-Last activity: 2026-01-29 - Completed 01-04-PLAN.md
+Phase: 2 of 6 (Chat Interface)
+Plan: 1 of 4 in current phase
+Status: In progress
+Last activity: 2026-01-29 - Completed 02-01-PLAN.md
 
-Progress: [████░░░░░░░░░░░░] 25% (4/16 plans)
+Progress: [█████░░░░░░░░░░░] 31% (5/16 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 4.5 min
-- Total execution time: 18 min
+- Total plans completed: 5
+- Average duration: 4.4 min
+- Total execution time: 22 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 4/4 | 18 min | 4.5 min |
+| 2. Chat Interface | 1/4 | 4 min | 4 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (9 min), 01-02 (3 min), 01-03 (3 min), 01-04 (3 min)
-- Trend: Accelerating
+- Last 5 plans: 01-01 (9 min), 01-02 (3 min), 01-03 (3 min), 01-04 (3 min), 02-01 (4 min)
+- Trend: Stable
 
 *Updated after each plan completion*
 
@@ -53,6 +54,10 @@ Recent decisions affecting current work:
 - ApiError uses explicit property declarations for erasableSyntaxOnly compatibility
 - Dark theme uses blue tint (hue 250) for visual depth instead of pure gray
 - Dark hierarchy: sidebar (0.13) < background (0.16) < card (0.19)
+- Session state lifted to App component for sharing between sidebar and ChatPage
+- null sessionId represents "new chat" state
+- ChatSessionList conditionally renders only when Chat tab is active
+- keepPreviousData used in useSession hook to prevent flash during refetch
 
 ### Pending Todos
 
@@ -64,6 +69,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-29T21:18:00Z
-Stopped at: Completed 01-04-PLAN.md (Phase 1 Foundation complete with gap-closure)
+Last session: 2026-01-29T22:19:00Z
+Stopped at: Completed 02-01-PLAN.md (Chat session list and hooks)
 Resume file: None
