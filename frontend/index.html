@@ -10,16 +10,26 @@
       (function() {
         const storageKey = 'vite-ui-theme';
         const theme = localStorage.getItem(storageKey);
+        // Light: oklch(1 0 0), Dark: oklch(0.16 0.01 250)
+        const lightBg = 'oklch(1 0 0)';
+        const darkBg = 'oklch(0.16 0.01 250)';
 
+        let isDark = false;
         if (theme === 'dark') {
-          document.documentElement.classList.add('dark');
+          isDark = true;
         } else if (theme === 'light') {
-          document.documentElement.classList.remove('dark');
+          isDark = false;
         } else {
           // System preference (default)
-          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-          }
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.backgroundColor = darkBg;
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.style.backgroundColor = lightBg;
         }
       })();
     </script>
