@@ -1,0 +1,46 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+CLAUDE.md
+
+# Downloaded models & weights (large files)
+embedding_weights/
+hf_models/
+
+# Local databases
+legal_chromadb/
+
+# Logs
+*.log
+logging.ini.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+dist/
+build/
+*.egg-info/
+DEPLOYMENT.md
