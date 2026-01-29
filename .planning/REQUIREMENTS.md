@@ -7,14 +7,14 @@
 
 ### Foundation
 
-- [ ] **FOUN-01**: Project scaffolded with Vite + React + TypeScript with strict mode
-- [ ] **FOUN-02**: Tailwind CSS configured with shadcn/ui components installed
-- [ ] **FOUN-03**: Light/dark mode toggle with theme persisted to localStorage
-- [ ] **FOUN-04**: No flash of unstyled content (FOUC) on page load
-- [ ] **FOUN-05**: Layout shell with sidebar, header, and page container
-- [ ] **FOUN-06**: Tab navigation between Chat, Retrieval, Ingestion, Evaluation sections
-- [ ] **FOUN-07**: API client configured with typed fetch and error handling
-- [ ] **FOUN-08**: TanStack Query configured for server state management
+- [x] **FOUN-01**: Project scaffolded with Vite + React + TypeScript with strict mode
+- [x] **FOUN-02**: Tailwind CSS configured with shadcn/ui components installed
+- [x] **FOUN-03**: Light/dark mode toggle with theme persisted to localStorage
+- [x] **FOUN-04**: No flash of unstyled content (FOUC) on page load
+- [x] **FOUN-05**: Layout shell with sidebar, header, and page container
+- [x] **FOUN-06**: Tab navigation between Chat, Retrieval, Ingestion, Evaluation sections
+- [x] **FOUN-07**: API client configured with typed fetch and error handling
+- [x] **FOUN-08**: TanStack Query configured for server state management
 
 ### Chat
 
@@ -123,14 +123,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | Phase 1 | Pending |
-| FOUN-02 | Phase 1 | Pending |
-| FOUN-03 | Phase 1 | Pending |
-| FOUN-04 | Phase 1 | Pending |
-| FOUN-05 | Phase 1 | Pending |
-| FOUN-06 | Phase 1 | Pending |
-| FOUN-07 | Phase 1 | Pending |
-| FOUN-08 | Phase 1 | Pending |
+| FOUN-01 | Phase 1 | Complete |
+| FOUN-02 | Phase 1 | Complete |
+| FOUN-03 | Phase 1 | Complete |
+| FOUN-04 | Phase 1 | Complete |
+| FOUN-05 | Phase 1 | Complete |
+| FOUN-06 | Phase 1 | Complete |
+| FOUN-07 | Phase 1 | Complete |
+| FOUN-08 | Phase 1 | Complete |
 | CHAT-01 | Phase 2 | Pending |
 | CHAT-02 | Phase 2 | Pending |
 | CHAT-03 | Phase 2 | Pending |
@@ -193,4 +193,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after roadmap creation*
+*Last updated: 2026-01-29 after Phase 1 completion*

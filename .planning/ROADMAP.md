@@ -12,7 +12,7 @@ This roadmap transforms the existing RAG document Q&A system from a functional G
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project scaffold, theme system, layout shell, API infrastructure
+- [x] **Phase 1: Foundation** - Project scaffold, theme system, layout shell, API infrastructure
 - [ ] **Phase 2: Chat** - Session management, message display, source citations, chat interactions
 - [ ] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
 - [ ] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
@@ -34,9 +34,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md - Project scaffold with Vite, TypeScript, Tailwind v4, shadcn/ui
-- [ ] 01-02-PLAN.md - Theme system with FOUC prevention and layout shell with navigation
-- [ ] 01-03-PLAN.md - API client with typed fetch and TanStack Query configuration
+- [x] 01-01-PLAN.md - Project scaffold with Vite, TypeScript, Tailwind v4, shadcn/ui
+- [x] 01-02-PLAN.md - Theme system with FOUC prevention and layout shell with navigation
+- [x] 01-03-PLAN.md - API client with typed fetch and TanStack Query configuration
 
 ### Phase 2: Chat
 **Goal**: Users can have conversations with the document Q&A system through an intuitive chat interface
@@ -126,7 +126,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Planned | - |
+| 1. Foundation | 3/3 | Complete | 2026-01-29 |
 | 2. Chat | 0/3 | Not started | - |
 | 3. Retrieval Testing | 0/2 | Not started | - |
 | 4. Ingestion | 0/3 | Not started | - |
