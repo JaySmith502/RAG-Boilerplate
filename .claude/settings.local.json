@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(docker compose:*)",
-      "Bash(timeout:*)"
+      "Bash(timeout:*)",
+      "Skill(gsd:map-codebase)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "spawner"
+  ]
 }
