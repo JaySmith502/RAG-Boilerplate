@@ -48,12 +48,12 @@ Plans:
   3. User can type a message, send it, and see the assistant response appear with visual distinction
   4. User can view source citations with each assistant response and expand/collapse them
   5. User can copy assistant responses to clipboard with a button click
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: Session sidebar and management
-- [ ] 02-02: Message display and input
-- [ ] 02-03: Source citations and response actions
+- [ ] 02-01-PLAN.md - Install shadcn components, create TanStack Query hooks, add session list to sidebar
+- [ ] 02-02-PLAN.md - Message bubbles, message list with auto-scroll, message input with Enter-to-send
+- [ ] 02-03-PLAN.md - Collapsible source citations, copy-to-clipboard button, error states with retry
 
 ### Phase 3: Retrieval Testing
 **Goal**: Developers can test retrieval queries with different parameters and inspect results
@@ -127,7 +127,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-29 |
-| 2. Chat | 0/3 | Not started | - |
+| 2. Chat | 0/3 | Planned | - |
 | 3. Retrieval Testing | 0/2 | Not started | - |
 | 4. Ingestion | 0/3 | Not started | - |
 | 5. Evaluation | 0/3 | Not started | - |
@@ -136,5 +136,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 ---
 *Roadmap created: 2026-01-29*
 *Phase 1 planned: 2026-01-29*
+*Phase 2 planned: 2026-01-29*
 *Total plans: 16 (estimated)*
 *Total requirements: 52*
