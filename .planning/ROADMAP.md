@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project scaffold, theme system, layout shell, API infrastructure
 - [x] **Phase 2: Chat** - Session management, message display, source citations, chat interactions
-- [ ] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
+- [x] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
 - [ ] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
 - [ ] **Phase 5: Evaluation** - Config form, results display, metrics comparison
 - [ ] **Phase 6: Design Polish** - SaaS aesthetic refinement, responsive layout, visual consistency
@@ -67,8 +67,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md - Install shadcn components, create useRetrieve hook, build RetrievalForm with parameter controls
-- [ ] 03-02-PLAN.md - ResultsTable with expandable rows, ResultsSkeleton, integrate into RetrievalPage
+- [x] 03-01-PLAN.md - Install shadcn components, create useRetrieve hook, build RetrievalForm with parameter controls
+- [x] 03-02-PLAN.md - ResultsTable with expandable rows, ResultsSkeleton, integrate into RetrievalPage
 
 ### Phase 4: Ingestion
 **Goal**: Users can ingest documents into the system and monitor job progress
@@ -128,7 +128,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-29 |
 | 2. Chat | 3/3 | Complete | 2026-01-29 |
-| 3. Retrieval Testing | 0/2 | Planned | - |
+| 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
 | 4. Ingestion | 0/3 | Not started | - |
 | 5. Evaluation | 0/3 | Not started | - |
 | 6. Design Polish | 0/2 | Not started | - |

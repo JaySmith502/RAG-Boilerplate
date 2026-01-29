@@ -34,16 +34,16 @@
 
 ### Retrieval Testing
 
-- [ ] **RETR-01**: Query text input for search terms
-- [ ] **RETR-02**: Top-K slider to control number of results
-- [ ] **RETR-03**: Query enhancer toggle checkbox
-- [ ] **RETR-04**: Reranking toggle checkbox
-- [ ] **RETR-05**: Pipeline type dropdown (recursive_overlap, semantic)
-- [ ] **RETR-06**: Retrieve button triggers API call
-- [ ] **RETR-07**: Results displayed in table with score, source columns
-- [ ] **RETR-08**: Result text expandable to show full content
-- [ ] **RETR-09**: Loading skeleton shown during retrieval
-- [ ] **RETR-10**: Error message with retry button on failure
+- [x] **RETR-01**: Query text input for search terms
+- [x] **RETR-02**: Top-K slider to control number of results
+- [x] **RETR-03**: Query enhancer toggle checkbox
+- [x] **RETR-04**: Reranking toggle checkbox
+- [x] **RETR-05**: Pipeline type dropdown (recursive_overlap, semantic)
+- [x] **RETR-06**: Retrieve button triggers API call
+- [x] **RETR-07**: Results displayed in table with score, source columns
+- [x] **RETR-08**: Result text expandable to show full content
+- [x] **RETR-09**: Loading skeleton shown during retrieval
+- [x] **RETR-10**: Error message with retry button on failure
 
 ### Ingestion
 
@@ -144,16 +144,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CHAT-11 | Phase 2 | Complete |
 | CHAT-12 | Phase 2 | Complete |
 | CHAT-13 | Phase 2 | Complete |
-| RETR-01 | Phase 3 | Pending |
-| RETR-02 | Phase 3 | Pending |
-| RETR-03 | Phase 3 | Pending |
-| RETR-04 | Phase 3 | Pending |
-| RETR-05 | Phase 3 | Pending |
-| RETR-06 | Phase 3 | Pending |
-| RETR-07 | Phase 3 | Pending |
-| RETR-08 | Phase 3 | Pending |
-| RETR-09 | Phase 3 | Pending |
-| RETR-10 | Phase 3 | Pending |
+| RETR-01 | Phase 3 | Complete |
+| RETR-02 | Phase 3 | Complete |
+| RETR-03 | Phase 3 | Complete |
+| RETR-04 | Phase 3 | Complete |
+| RETR-05 | Phase 3 | Complete |
+| RETR-06 | Phase 3 | Complete |
+| RETR-07 | Phase 3 | Complete |
+| RETR-08 | Phase 3 | Complete |
+| RETR-09 | Phase 3 | Complete |
+| RETR-10 | Phase 3 | Complete |
 | INGE-01 | Phase 4 | Pending |
 | INGE-02 | Phase 4 | Pending |
 | INGE-03 | Phase 4 | Pending |
@@ -193,4 +193,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after Phase 2 completion*
+*Last updated: 2026-01-29 after Phase 3 completion*
