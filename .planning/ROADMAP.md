@@ -31,12 +31,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. User can refresh the page and theme preference is preserved (no flash of wrong theme)
   4. User can navigate between Chat, Retrieval, Ingestion, and Evaluation tabs
   5. API calls show loading states and display error messages on failure
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Project scaffold and tooling
-- [ ] 01-02: Theme system and layout shell
-- [ ] 01-03: API client and TanStack Query setup
+- [ ] 01-01-PLAN.md - Project scaffold with Vite, TypeScript, Tailwind v4, shadcn/ui
+- [ ] 01-02-PLAN.md - Theme system with FOUC prevention and layout shell with navigation
+- [ ] 01-03-PLAN.md - API client with typed fetch and TanStack Query configuration
 
 ### Phase 2: Chat
 **Goal**: Users can have conversations with the document Q&A system through an intuitive chat interface
@@ -126,7 +126,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 0/3 | Planned | - |
 | 2. Chat | 0/3 | Not started | - |
 | 3. Retrieval Testing | 0/2 | Not started | - |
 | 4. Ingestion | 0/3 | Not started | - |
@@ -135,5 +135,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 ---
 *Roadmap created: 2026-01-29*
+*Phase 1 planned: 2026-01-29*
 *Total plans: 16 (estimated)*
 *Total requirements: 52*
