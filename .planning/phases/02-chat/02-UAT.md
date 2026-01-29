@@ -1,5 +1,5 @@
 ---
-status: complete
+status: diagnosed
 phase: 02-chat
 source: [02-01-SUMMARY.md, 02-02-SUMMARY.md, 02-03-SUMMARY.md]
 started: 2026-01-29T22:40:00Z
@@ -67,7 +67,10 @@ skipped: 6
   reason: "User reported: The plus icon doesn't appear to have any impact, the text in the chat box stays there when plus is clicked"
   severity: minor
   test: 3
-  root_cause: ""
-  artifacts: []
-  missing: []
+  root_cause: "MessageInput has local useState for message text. When 'New Chat' is clicked and selectedSessionId changes to null, MessageInput is not remounted - its local state persists."
+  artifacts:
+    - path: "frontend/src/features/chat/ChatPage.tsx"
+      issue: "MessageInput rendered without key prop based on session"
+  missing:
+    - "Add key={selectedSessionId ?? 'new'} to MessageInput to force remount on session change"
   debug_session: ""
