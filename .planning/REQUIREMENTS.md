@@ -18,19 +18,19 @@
 
 ### Chat
 
-- [ ] **CHAT-01**: Session list displayed in sidebar
-- [ ] **CHAT-02**: User can select a session to view its conversation history
-- [ ] **CHAT-03**: New chat button creates a new session
-- [ ] **CHAT-04**: Messages displayed as chat bubbles with user/assistant distinction
-- [ ] **CHAT-05**: Message timestamps displayed
-- [ ] **CHAT-06**: Text input for composing messages
-- [ ] **CHAT-07**: Send button submits message to API
-- [ ] **CHAT-08**: Input cleared after successful send
-- [ ] **CHAT-09**: Source citations displayed with assistant responses
-- [ ] **CHAT-10**: Sources are collapsible/expandable
-- [ ] **CHAT-11**: Loading state shown while waiting for response
-- [ ] **CHAT-12**: Error state shown with retry option on failure
-- [ ] **CHAT-13**: Copy message button copies assistant response to clipboard
+- [x] **CHAT-01**: Session list displayed in sidebar
+- [x] **CHAT-02**: User can select a session to view its conversation history
+- [x] **CHAT-03**: New chat button creates a new session
+- [x] **CHAT-04**: Messages displayed as chat bubbles with user/assistant distinction
+- [x] **CHAT-05**: Message timestamps displayed
+- [x] **CHAT-06**: Text input for composing messages
+- [x] **CHAT-07**: Send button submits message to API
+- [x] **CHAT-08**: Input cleared after successful send
+- [x] **CHAT-09**: Source citations displayed with assistant responses
+- [x] **CHAT-10**: Sources are collapsible/expandable
+- [x] **CHAT-11**: Loading state shown while waiting for response
+- [x] **CHAT-12**: Error state shown with retry option on failure
+- [x] **CHAT-13**: Copy message button copies assistant response to clipboard
 
 ### Retrieval Testing
 
@@ -131,19 +131,19 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUN-06 | Phase 1 | Complete |
 | FOUN-07 | Phase 1 | Complete |
 | FOUN-08 | Phase 1 | Complete |
-| CHAT-01 | Phase 2 | Pending |
-| CHAT-02 | Phase 2 | Pending |
-| CHAT-03 | Phase 2 | Pending |
-| CHAT-04 | Phase 2 | Pending |
-| CHAT-05 | Phase 2 | Pending |
-| CHAT-06 | Phase 2 | Pending |
-| CHAT-07 | Phase 2 | Pending |
-| CHAT-08 | Phase 2 | Pending |
-| CHAT-09 | Phase 2 | Pending |
-| CHAT-10 | Phase 2 | Pending |
-| CHAT-11 | Phase 2 | Pending |
-| CHAT-12 | Phase 2 | Pending |
-| CHAT-13 | Phase 2 | Pending |
+| CHAT-01 | Phase 2 | Complete |
+| CHAT-02 | Phase 2 | Complete |
+| CHAT-03 | Phase 2 | Complete |
+| CHAT-04 | Phase 2 | Complete |
+| CHAT-05 | Phase 2 | Complete |
+| CHAT-06 | Phase 2 | Complete |
+| CHAT-07 | Phase 2 | Complete |
+| CHAT-08 | Phase 2 | Complete |
+| CHAT-09 | Phase 2 | Complete |
+| CHAT-10 | Phase 2 | Complete |
+| CHAT-11 | Phase 2 | Complete |
+| CHAT-12 | Phase 2 | Complete |
+| CHAT-13 | Phase 2 | Complete |
 | RETR-01 | Phase 3 | Pending |
 | RETR-02 | Phase 3 | Pending |
 | RETR-03 | Phase 3 | Pending |
@@ -193,4 +193,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after Phase 1 completion*
+*Last updated: 2026-01-29 after Phase 2 completion*

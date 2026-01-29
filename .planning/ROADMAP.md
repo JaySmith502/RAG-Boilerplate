@@ -13,7 +13,7 @@ This roadmap transforms the existing RAG document Q&A system from a functional G
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project scaffold, theme system, layout shell, API infrastructure
-- [ ] **Phase 2: Chat** - Session management, message display, source citations, chat interactions
+- [x] **Phase 2: Chat** - Session management, message display, source citations, chat interactions
 - [ ] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
 - [ ] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
 - [ ] **Phase 5: Evaluation** - Config form, results display, metrics comparison
@@ -51,9 +51,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md - Install shadcn components, create TanStack Query hooks, add session list to sidebar
-- [ ] 02-02-PLAN.md - Message bubbles, message list with auto-scroll, message input with Enter-to-send
-- [ ] 02-03-PLAN.md - Collapsible source citations, copy-to-clipboard button, error states with retry
+- [x] 02-01-PLAN.md - Install shadcn components, create TanStack Query hooks, add session list to sidebar
+- [x] 02-02-PLAN.md - Message bubbles, message list with auto-scroll, message input with Enter-to-send
+- [x] 02-03-PLAN.md - Collapsible source citations, copy-to-clipboard button, error states with retry
 
 ### Phase 3: Retrieval Testing
 **Goal**: Developers can test retrieval queries with different parameters and inspect results
@@ -127,7 +127,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-29 |
-| 2. Chat | 0/3 | Planned | - |
+| 2. Chat | 3/3 | Complete | 2026-01-29 |
 | 3. Retrieval Testing | 0/2 | Not started | - |
 | 4. Ingestion | 0/3 | Not started | - |
 | 5. Evaluation | 0/3 | Not started | - |
