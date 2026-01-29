@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Phase: 2 of 6 (Chat Interface)
-Plan: 1 of 4 in current phase
+Plan: 2 of 4 in current phase
 Status: In progress
-Last activity: 2026-01-29 - Completed 02-01-PLAN.md
+Last activity: 2026-01-29 - Completed 02-02-PLAN.md
 
-Progress: [█████░░░░░░░░░░░] 31% (5/16 plans)
+Progress: [██████░░░░░░░░░░] 38% (6/16 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 4.4 min
-- Total execution time: 22 min
+- Total plans completed: 6
+- Average duration: 4.3 min
+- Total execution time: 26 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 4/4 | 18 min | 4.5 min |
-| 2. Chat Interface | 1/4 | 4 min | 4 min |
+| 2. Chat Interface | 2/4 | 8 min | 4 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (9 min), 01-02 (3 min), 01-03 (3 min), 01-04 (3 min), 02-01 (4 min)
+- Last 5 plans: 01-02 (3 min), 01-03 (3 min), 01-04 (3 min), 02-01 (4 min), 02-02 (4 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -58,6 +58,10 @@ Recent decisions affecting current work:
 - null sessionId represents "new chat" state
 - ChatSessionList conditionally renders only when Chat tab is active
 - keepPreviousData used in useSession hook to prevent flash during refetch
+- User messages right-aligned with primary color, assistant left-aligned with muted
+- Auto-scroll respects user scroll position (disabled when >100px from bottom)
+- Enter sends message, Shift+Enter for newline (standard chat UX)
+- Optimistic UI shows pending message immediately with opacity reduction
 
 ### Pending Todos
 
@@ -69,6 +73,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-29T22:19:00Z
-Stopped at: Completed 02-01-PLAN.md (Chat session list and hooks)
+Last session: 2026-01-29T22:29:00Z
+Stopped at: Completed 02-02-PLAN.md (Chat core UI components)
 Resume file: None
