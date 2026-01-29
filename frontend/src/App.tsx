@@ -14,11 +14,17 @@ import { queryClient } from "@/lib/query-client"
 
 function AppContent() {
   const [activeSection, setActiveSection] = useState("chat")
+  const [selectedSessionId, setSelectedSessionId] = useState<string | null>(null)
 
   const renderPage = () => {
     switch (activeSection) {
       case "chat":
-        return <ChatPage />
+        return (
+          <ChatPage
+            selectedSessionId={selectedSessionId}
+            onSelectSession={setSelectedSessionId}
+          />
+        )
       case "retrieval":
         return <RetrievalPage />
       case "ingestion":
@@ -26,7 +32,12 @@ function AppContent() {
       case "evaluation":
         return <EvaluationPage />
       default:
-        return <ChatPage />
+        return (
+          <ChatPage
+            selectedSessionId={selectedSessionId}
+            onSelectSession={setSelectedSessionId}
+          />
+        )
     }
   }
 
@@ -36,6 +47,8 @@ function AppContent() {
         <AppSidebar
           activeSection={activeSection}
           onSectionChange={setActiveSection}
+          selectedSessionId={selectedSessionId}
+          onSelectSession={setSelectedSessionId}
         />
         <div className="flex flex-1 flex-col">
           <Header />

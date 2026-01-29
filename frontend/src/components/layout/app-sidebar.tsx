@@ -9,6 +9,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { ChatSessionList } from "@/features/chat/components/ChatSessionList"
 
 const navItems = [
   { title: "Chat", icon: MessageSquare, id: "chat" },
@@ -20,9 +21,16 @@ const navItems = [
 interface AppSidebarProps {
   activeSection: string
   onSectionChange: (section: string) => void
+  selectedSessionId: string | null
+  onSelectSession: (sessionId: string | null) => void
 }
 
-export function AppSidebar({ activeSection, onSectionChange }: AppSidebarProps) {
+export function AppSidebar({
+  activeSection,
+  onSectionChange,
+  selectedSessionId,
+  onSelectSession,
+}: AppSidebarProps) {
   return (
     <Sidebar>
       <SidebarContent>
@@ -44,6 +52,12 @@ export function AppSidebar({ activeSection, onSectionChange }: AppSidebarProps) 
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        {activeSection === 'chat' && (
+          <ChatSessionList
+            selectedSessionId={selectedSessionId}
+            onSelectSession={onSelectSession}
+          />
+        )}
       </SidebarContent>
     </Sidebar>
   )
