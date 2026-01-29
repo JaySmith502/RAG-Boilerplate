@@ -64,11 +64,11 @@ Plans:
   2. User can execute a retrieval query and see results in a table with scores
   3. User can expand individual results to view full content
   4. User sees loading skeleton during retrieval and clear error messages on failure
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Query form with parameter controls
-- [ ] 03-02: Results table with expansion
+- [ ] 03-01-PLAN.md - Install shadcn components, create useRetrieve hook, build RetrievalForm with parameter controls
+- [ ] 03-02-PLAN.md - ResultsTable with expandable rows, ResultsSkeleton, integrate into RetrievalPage
 
 ### Phase 4: Ingestion
 **Goal**: Users can ingest documents into the system and monitor job progress
@@ -128,7 +128,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-29 |
 | 2. Chat | 3/3 | Complete | 2026-01-29 |
-| 3. Retrieval Testing | 0/2 | Not started | - |
+| 3. Retrieval Testing | 0/2 | Planned | - |
 | 4. Ingestion | 0/3 | Not started | - |
 | 5. Evaluation | 0/3 | Not started | - |
 | 6. Design Polish | 0/2 | Not started | - |
@@ -137,5 +137,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 *Roadmap created: 2026-01-29*
 *Phase 1 planned: 2026-01-29*
 *Phase 2 planned: 2026-01-29*
+*Phase 3 planned: 2026-01-29*
 *Total plans: 16 (estimated)*
 *Total requirements: 52*
