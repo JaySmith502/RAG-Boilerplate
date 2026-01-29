@@ -1,5 +1,5 @@
 ---
-status: complete
+status: diagnosed
 phase: 01-foundation
 source: [01-01-SUMMARY.md, 01-02-SUMMARY.md, 01-03-SUMMARY.md]
 started: 2026-01-29T21:30:00Z
@@ -49,7 +49,12 @@ skipped: 0
   reason: "User reported: I want something a little less 'black' than pure black, something with a little more visual depth that isn't exactly the same as the sidebar gray on dark mode"
   severity: cosmetic
   test: 5
-  root_cause: ""
-  artifacts: []
-  missing: []
+  root_cause: "Dark theme uses very low lightness (0.145) with zero chroma for background, and sidebar (0.205) is only slightly different. Both are pure neutral grays with no visual depth."
+  artifacts:
+    - path: "frontend/src/index.css"
+      issue: ".dark CSS variables use near-black neutrals with minimal differentiation"
+  missing:
+    - "Softer dark background (higher lightness, ~0.17-0.18)"
+    - "Clear visual distinction between background and sidebar"
+    - "Optional: subtle chroma for warmth (like Linear/Notion dark themes)"
   debug_session: ""
