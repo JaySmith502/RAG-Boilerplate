@@ -1,4 +1,6 @@
 import { cn } from '@/lib/utils'
+import { SourceCitations } from './SourceCitations'
+import { MessageActions } from './MessageActions'
 import type { Message } from '@/types/api'
 
 interface MessageBubbleProps {
@@ -8,6 +10,7 @@ interface MessageBubbleProps {
 
 export function MessageBubble({ message, isPending }: MessageBubbleProps) {
   const isUser = message.role === 'user'
+  const isAssistant = message.role === 'assistant'
 
   const formatTimestamp = (timestamp: string) => {
     const date = new Date(timestamp)
@@ -34,6 +37,8 @@ export function MessageBubble({ message, isPending }: MessageBubbleProps) {
         )}
       >
         <p className="whitespace-pre-wrap break-words">{message.content}</p>
+
+        {/* Timestamp */}
         <p
           className={cn(
             'text-xs mt-1',
@@ -42,6 +47,16 @@ export function MessageBubble({ message, isPending }: MessageBubbleProps) {
         >
           {formatTimestamp(message.timestamp)}
         </p>
+
+        {/* Source citations - assistant only */}
+        {isAssistant && message.sources && message.sources.length > 0 && (
+          <SourceCitations sources={message.sources} />
+        )}
+
+        {/* Message actions - assistant only, not pending */}
+        {isAssistant && !isPending && (
+          <MessageActions content={message.content} />
+        )}
       </div>
     </div>
   )
