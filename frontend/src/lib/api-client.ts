@@ -5,13 +5,16 @@ const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
  * Normalizes error responses from the FastAPI backend.
  */
 export class ApiError extends Error {
-  constructor(
-    public status: number,
-    public detail: string,
-    public originalError?: unknown
-  ) {
+  status: number
+  detail: string
+  originalError?: unknown
+
+  constructor(status: number, detail: string, originalError?: unknown) {
     super(detail)
     this.name = 'ApiError'
+    this.status = status
+    this.detail = detail
+    this.originalError = originalError
   }
 
   /**

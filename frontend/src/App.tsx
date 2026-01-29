@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { QueryClientProvider } from "@tanstack/react-query"
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import { ThemeProvider } from "@/providers/theme-provider"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/layout/app-sidebar"
@@ -8,6 +10,7 @@ import { RetrievalPage } from "@/features/retrieval/RetrievalPage"
 import { IngestionPage } from "@/features/ingestion/IngestionPage"
 import { EvaluationPage } from "@/features/evaluation/EvaluationPage"
 import { Toaster } from "@/components/ui/sonner"
+import { queryClient } from "@/lib/query-client"
 
 function AppContent() {
   const [activeSection, setActiveSection] = useState("chat")
@@ -46,9 +49,12 @@ function AppContent() {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <AppContent />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+        <AppContent />
+      </ThemeProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   )
 }
 
