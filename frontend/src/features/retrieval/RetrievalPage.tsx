@@ -39,7 +39,7 @@ export function RetrievalPage() {
       <div className="space-y-6">
         {/* Header */}
         <div>
-          <h2 className="text-2xl font-semibold">Retrieval Testing</h2>
+          <h2 className="text-3xl font-bold">Retrieval Testing</h2>
           <p className="text-muted-foreground">
             Test retrieval queries with different parameters and inspect results
           </p>
