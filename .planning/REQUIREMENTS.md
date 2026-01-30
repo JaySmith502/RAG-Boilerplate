@@ -47,18 +47,18 @@
 
 ### Ingestion
 
-- [ ] **INGE-01**: Folder dropdown populated from assets API
-- [ ] **INGE-02**: Refresh button to reload folder list
-- [ ] **INGE-03**: File type checkboxes (PDF, JSON)
-- [ ] **INGE-04**: Pipeline type dropdown (recursive_overlap, semantic)
-- [ ] **INGE-05**: Start ingestion button triggers job
-- [ ] **INGE-06**: Job ID displayed after job starts
-- [ ] **INGE-07**: Progress bar shows percentage complete
-- [ ] **INGE-08**: Status text shows current state and file being processed
-- [ ] **INGE-09**: Automatic polling updates progress while job is running
-- [ ] **INGE-10**: Job history table shows active and recent jobs
-- [ ] **INGE-11**: Loading state for job list
-- [ ] **INGE-12**: Error handling for failed jobs
+- [x] **INGE-01**: Folder dropdown populated from assets API
+- [x] **INGE-02**: Refresh button to reload folder list
+- [x] **INGE-03**: File type checkboxes (PDF, JSON)
+- [x] **INGE-04**: Pipeline type dropdown (recursive_overlap, semantic)
+- [x] **INGE-05**: Start ingestion button triggers job
+- [x] **INGE-06**: Job ID displayed after job starts
+- [x] **INGE-07**: Progress bar shows percentage complete
+- [x] **INGE-08**: Status text shows current state and file being processed
+- [x] **INGE-09**: Automatic polling updates progress while job is running
+- [x] **INGE-10**: Job history table shows active and recent jobs
+- [x] **INGE-11**: Loading state for job list
+- [x] **INGE-12**: Error handling for failed jobs
 
 ### Evaluation
 
@@ -154,18 +154,18 @@ Which phases cover which requirements. Updated during roadmap creation.
 | RETR-08 | Phase 3 | Complete |
 | RETR-09 | Phase 3 | Complete |
 | RETR-10 | Phase 3 | Complete |
-| INGE-01 | Phase 4 | Pending |
-| INGE-02 | Phase 4 | Pending |
-| INGE-03 | Phase 4 | Pending |
-| INGE-04 | Phase 4 | Pending |
-| INGE-05 | Phase 4 | Pending |
-| INGE-06 | Phase 4 | Pending |
-| INGE-07 | Phase 4 | Pending |
-| INGE-08 | Phase 4 | Pending |
-| INGE-09 | Phase 4 | Pending |
-| INGE-10 | Phase 4 | Pending |
-| INGE-11 | Phase 4 | Pending |
-| INGE-12 | Phase 4 | Pending |
+| INGE-01 | Phase 4 | Complete |
+| INGE-02 | Phase 4 | Complete |
+| INGE-03 | Phase 4 | Complete |
+| INGE-04 | Phase 4 | Complete |
+| INGE-05 | Phase 4 | Complete |
+| INGE-06 | Phase 4 | Complete |
+| INGE-07 | Phase 4 | Complete |
+| INGE-08 | Phase 4 | Complete |
+| INGE-09 | Phase 4 | Complete |
+| INGE-10 | Phase 4 | Complete |
+| INGE-11 | Phase 4 | Complete |
+| INGE-12 | Phase 4 | Complete |
 | EVAL-01 | Phase 5 | Pending |
 | EVAL-02 | Phase 5 | Pending |
 | EVAL-03 | Phase 5 | Pending |
@@ -193,4 +193,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after Phase 3 completion*
+*Last updated: 2026-01-29 after Phase 4 completion*

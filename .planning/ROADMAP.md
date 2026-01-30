@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation** - Project scaffold, theme system, layout shell, API infrastructure
 - [x] **Phase 2: Chat** - Session management, message display, source citations, chat interactions
 - [x] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
-- [ ] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
+- [x] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
 - [ ] **Phase 5: Evaluation** - Config form, results display, metrics comparison
 - [ ] **Phase 6: Design Polish** - SaaS aesthetic refinement, responsive layout, visual consistency
 
@@ -83,9 +83,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 04-01-PLAN.md - Install shadcn components, create folder/job hooks, build IngestionForm
-- [ ] 04-02-PLAN.md - Progress monitoring with conditional polling and completion notifications
-- [ ] 04-03-PLAN.md - Job history table with expandable errors and retry functionality
+- [x] 04-01-PLAN.md - Install shadcn components, create folder/job hooks, build IngestionForm
+- [x] 04-02-PLAN.md - Progress monitoring with conditional polling and completion notifications
+- [x] 04-03-PLAN.md - Job history table with expandable errors and retry functionality
 
 ### Phase 5: Evaluation
 **Goal**: Users can run evaluations and compare results across different configurations
@@ -129,7 +129,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 1. Foundation | 3/3 | Complete | 2026-01-29 |
 | 2. Chat | 3/3 | Complete | 2026-01-29 |
 | 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
-| 4. Ingestion | 0/3 | Planned | - |
+| 4. Ingestion | 3/3 | Complete | 2026-01-29 |
 | 5. Evaluation | 0/3 | Not started | - |
 | 6. Design Polish | 0/2 | Not started | - |
 
