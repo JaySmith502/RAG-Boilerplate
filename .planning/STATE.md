@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** External users can interact with the document Q&A system through an intuitive, modern interface
-**Current focus:** Phase 5 - Evaluation (Not started)
+**Current focus:** Phase 5 - Evaluation (In progress)
 
 ## Current Position
 
 Phase: 5 of 6 (Evaluation)
-Plan: 0 of 3 in current phase
-Status: Not started
-Last activity: 2026-01-30 - Completed Phase 4 (Ingestion)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-01-30 - Completed 05-01-PLAN.md (Evaluation Start Form)
 
-Progress: [████████████░░░░] 75% (12/16 plans)
+Progress: [█████████████░░░] 81% (13/16 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
+- Total plans completed: 13
 - Average duration: 3.8 min
-- Total execution time: 46 min
+- Total execution time: 50 min
 
 **By Phase:**
 
@@ -31,9 +31,10 @@ Progress: [████████████░░░░] 75% (12/16 plans)
 | 2. Chat Interface | 3/4 | 11 min | 3.7 min |
 | 3. Retrieval Testing | 2/2 | 6 min | 3.0 min |
 | 4. Ingestion | 3/3 | 11 min | 3.7 min |
+| 5. Evaluation | 1/3 | 4 min | 4.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-01 (3 min), 03-02 (3 min), 04-01 (4 min), 04-02 (2 min), 04-03 (5 min)
+- Last 5 plans: 03-02 (3 min), 04-01 (4 min), 04-02 (2 min), 04-03 (5 min), 05-01 (4 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -82,6 +83,9 @@ Recent decisions affecting current work:
 - Toast info for retry (backend lacks original config storage)
 - 10 second polling for job list (slower than individual job 5s)
 - Collapsible error rows only for failed jobs
+- Cross-feature import: FolderSelect from ingestion feature for evaluation
+- Synchronous mutation pattern for evaluation (no polling needed)
+- Questions slider disabled when sourceEvaluationId is set
 
 ### Pending Todos
 
@@ -93,6 +97,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-30T00:30:00Z
-Stopped at: Completed Phase 4 (Ingestion) - verified and ready for Phase 5
+Last session: 2026-01-30T01:00:32Z
+Stopped at: Completed 05-01-PLAN.md (Evaluation Start Form)
 Resume file: None
