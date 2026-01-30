@@ -151,22 +151,24 @@ export function IngestionPage() {
 
         {/* Error State */}
         {isError && (
-          <div className="border border-destructive/50 bg-destructive/10 rounded-lg p-4">
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-destructive">
-                Failed to start job: {error instanceof Error ? error.message : 'Unknown error'}
-              </p>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleRetry}
-                className="border-destructive/50 text-destructive hover:bg-destructive/10"
-              >
-                <RefreshCw className="h-3 w-3 mr-1" />
-                Dismiss
-              </Button>
-            </div>
-          </div>
+          <Card className="border-destructive/50 bg-destructive/10">
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <p className="text-sm text-destructive">
+                  Failed to start job: {error instanceof Error ? error.message : 'Unknown error'}
+                </p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleRetry}
+                  className="border-destructive/50 text-destructive hover:bg-destructive/10"
+                >
+                  <RefreshCw className="h-3 w-3 mr-1" />
+                  Dismiss
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         )}
 
         {/* Job History Card */}
