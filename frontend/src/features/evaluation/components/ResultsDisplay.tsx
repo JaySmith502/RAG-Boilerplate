@@ -63,7 +63,7 @@ export function ResultsDisplay({ evaluationId }: ResultsDisplayProps) {
   return (
     <div className="space-y-4">
       {/* Metrics grid - EVAL-10 */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <MetricCard
           label="Hit Rate"
           value={results_summary?.hit_rate}
