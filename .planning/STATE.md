@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Phase: 4 of 6 (Ingestion)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-01-30 - Completed 04-01-PLAN.md
+Last activity: 2026-01-30 - Completed 04-02-PLAN.md
 
-Progress: [██████████░░░░░░] 63% (10/16 plans)
+Progress: [███████████░░░░░] 69% (11/16 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 3.9 min
-- Total execution time: 39 min
+- Total plans completed: 11
+- Average duration: 3.7 min
+- Total execution time: 41 min
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [██████████░░░░░░] 63% (10/16 plans)
 | 1. Foundation | 4/4 | 18 min | 4.5 min |
 | 2. Chat Interface | 3/4 | 11 min | 3.7 min |
 | 3. Retrieval Testing | 2/2 | 6 min | 3.0 min |
-| 4. Ingestion | 1/3 | 4 min | 4.0 min |
+| 4. Ingestion | 2/3 | 6 min | 3.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (4 min), 02-03 (3 min), 03-01 (3 min), 03-02 (3 min), 04-01 (4 min)
+- Last 5 plans: 02-03 (3 min), 03-01 (3 min), 03-02 (3 min), 04-01 (4 min), 04-02 (2 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -76,6 +76,9 @@ Recent decisions affecting current work:
 - Inline onSuccess callback for mutation to set job ID state
 - Warning for zero-file folders (not blocking, just informational)
 - File types as checkbox array vs multi-select (simpler for 2 options)
+- useRef tracks previous status to fire toast only on transitions (not initial load)
+- Polling stops via refetchInterval returning false when status is completed/failed
+- JobProgress compact mode for future table row display
 
 ### Pending Todos
 
@@ -87,6 +90,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-30T00:21:00Z
-Stopped at: Completed 04-01-PLAN.md - ingestion form with job start
+Last session: 2026-01-30T00:24:45Z
+Stopped at: Completed 04-02-PLAN.md - progress monitoring with polling and toasts
 Resume file: None
