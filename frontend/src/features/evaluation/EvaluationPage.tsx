@@ -11,12 +11,17 @@ import {
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { EvaluationForm } from './components/EvaluationForm'
+import { ComparisonTable } from './components/ComparisonTable'
+import { EvaluationSelect } from './components/EvaluationSelect'
+import { ResultsDisplay } from './components/ResultsDisplay'
 import { useStartEvaluation } from './hooks/useStartEvaluation'
 import { useEvaluations } from './hooks/useEvaluations'
 import type { EvaluationRequest } from '@/types/api'
 
 export function EvaluationPage() {
   const [lastEvaluationId, setLastEvaluationId] = useState<string | null>(null)
+  const [selectedEvaluationId, setSelectedEvaluationId] = useState<string | null>(null)
+  const [comparisonIds, setComparisonIds] = useState<Set<string>>(new Set())
 
   const { mutate: startEvaluation, isPending, isError, error, reset } = useStartEvaluation()
   const { data: evaluationsData } = useEvaluations()
@@ -28,6 +33,7 @@ export function EvaluationPage() {
     startEvaluation(request, {
       onSuccess: (data) => {
         setLastEvaluationId(data.evaluation_id)
+        setSelectedEvaluationId(data.evaluation_id)
         toast.success('Evaluation Complete', {
           description: `Evaluation ${data.evaluation_id.slice(0, 8)}... finished`,
         })
@@ -110,6 +116,57 @@ export function EvaluationPage() {
             </CardContent>
           </Card>
         )}
+
+        {/* Results Card - EVAL-09, EVAL-10, EVAL-11 */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Results</CardTitle>
+            <CardDescription>
+              Select an evaluation to view its metrics
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <EvaluationSelect
+              value={selectedEvaluationId}
+              onChange={setSelectedEvaluationId}
+              evaluations={evaluations}
+            />
+            {selectedEvaluationId && (
+              <ResultsDisplay evaluationId={selectedEvaluationId} />
+            )}
+          </CardContent>
+        </Card>
+
+        {/* Compare Evaluations Card - EVAL-12 */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Compare Evaluations</CardTitle>
+            <CardDescription>
+              Select evaluations to compare their configurations and metrics
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            {comparisonIds.size > 0 && (
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-sm text-muted-foreground">
+                  {comparisonIds.size} evaluation(s) selected
+                </span>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setComparisonIds(new Set())}
+                >
+                  Clear selection
+                </Button>
+              </div>
+            )}
+            <ComparisonTable
+              evaluations={evaluations}
+              selectedIds={comparisonIds}
+              onSelectionChange={setComparisonIds}
+            />
+          </CardContent>
+        </Card>
       </div>
     </PageContainer>
   )
