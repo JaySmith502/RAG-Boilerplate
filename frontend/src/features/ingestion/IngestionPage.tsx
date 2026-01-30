@@ -7,8 +7,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { IngestionForm } from './components/IngestionForm'
 import { JobProgress } from './components/JobProgress'
 import { JobStatusBadge } from './components/JobStatusBadge'
+import { JobHistoryTable } from './components/JobHistoryTable'
+import { JobHistorySkeleton } from './components/JobHistorySkeleton'
 import { useStartJob } from './hooks/useStartJob'
 import { useJobStatus } from './hooks/useJobStatus'
+import { useActiveJobs } from './hooks/useActiveJobs'
 import type { IngestionJobRequest, IngestionStatus } from '@/types/api'
 
 export function IngestionPage() {
@@ -24,6 +27,7 @@ export function IngestionPage() {
   } = useStartJob()
 
   const { data: progress } = useJobStatus(currentJobId)
+  const { data: jobs, isPending: jobsLoading } = useActiveJobs()
 
   // Toast notifications on status transitions
   useEffect(() => {
@@ -61,6 +65,13 @@ export function IngestionPage() {
 
   const handleRetry = () => {
     reset()
+  }
+
+  const handleRetryJob = (_jobId: string) => {
+    // Backend doesn't return original config, so inform user to configure a new job
+    toast.info('Retry Job', {
+      description: 'Please configure and start a new job with the same settings.',
+    })
   }
 
   // Determine if job is in a running state
@@ -157,6 +168,23 @@ export function IngestionPage() {
             </div>
           </div>
         )}
+
+        {/* Job History Card */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Job History</CardTitle>
+          </CardHeader>
+          <CardContent>
+            {jobsLoading ? (
+              <JobHistorySkeleton />
+            ) : (
+              <JobHistoryTable
+                jobs={jobs ?? []}
+                onRetry={handleRetryJob}
+              />
+            )}
+          </CardContent>
+        </Card>
       </div>
     </PageContainer>
   )
