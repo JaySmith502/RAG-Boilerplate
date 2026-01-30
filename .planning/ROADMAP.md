@@ -97,12 +97,12 @@ Plans:
   3. User can select a completed evaluation and view its metrics (hit rate, MRR, avg score)
   4. User can see which configuration was used for each evaluation result
   5. User can compare multiple evaluations side by side in a table
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: Evaluation configuration form
-- [ ] 05-02: Results display and metrics
-- [ ] 05-03: Comparison table
+- [ ] 05-01-PLAN.md - Evaluation hooks, EvaluationForm with all controls, ReuseQuestionsSelect
+- [ ] 05-02-PLAN.md - Results display with metrics cards, EvaluationSelect, config display
+- [ ] 05-03-PLAN.md - ComparisonTable with multi-select checkboxes
 
 ### Phase 6: Design Polish
 **Goal**: The application has a cohesive, professional SaaS aesthetic that builds user trust
@@ -130,7 +130,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Chat | 3/3 | Complete | 2026-01-29 |
 | 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
 | 4. Ingestion | 3/3 | Complete | 2026-01-29 |
-| 5. Evaluation | 0/3 | Not started | - |
+| 5. Evaluation | 0/3 | Planned | - |
 | 6. Design Polish | 0/2 | Not started | - |
 
 ---
@@ -139,5 +139,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 *Phase 2 planned: 2026-01-29*
 *Phase 3 planned: 2026-01-29*
 *Phase 4 planned: 2026-01-29*
+*Phase 5 planned: 2026-01-30*
 *Total plans: 16 (estimated)*
 *Total requirements: 52*
