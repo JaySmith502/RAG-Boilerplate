@@ -80,12 +80,12 @@ Plans:
   3. User can see a progress bar with percentage and current file being processed
   4. User can view a history of active and recent ingestion jobs
   5. User sees appropriate error handling when jobs fail
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: Folder selection and job configuration
-- [ ] 04-02: Progress monitoring with polling
-- [ ] 04-03: Job history table
+- [ ] 04-01-PLAN.md - Install shadcn components, create folder/job hooks, build IngestionForm
+- [ ] 04-02-PLAN.md - Progress monitoring with conditional polling and completion notifications
+- [ ] 04-03-PLAN.md - Job history table with expandable errors and retry functionality
 
 ### Phase 5: Evaluation
 **Goal**: Users can run evaluations and compare results across different configurations
@@ -129,7 +129,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 1. Foundation | 3/3 | Complete | 2026-01-29 |
 | 2. Chat | 3/3 | Complete | 2026-01-29 |
 | 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
-| 4. Ingestion | 0/3 | Not started | - |
+| 4. Ingestion | 0/3 | Planned | - |
 | 5. Evaluation | 0/3 | Not started | - |
 | 6. Design Polish | 0/2 | Not started | - |
 
@@ -138,5 +138,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 *Phase 1 planned: 2026-01-29*
 *Phase 2 planned: 2026-01-29*
 *Phase 3 planned: 2026-01-29*
+*Phase 4 planned: 2026-01-29*
 *Total plans: 16 (estimated)*
 *Total requirements: 52*
