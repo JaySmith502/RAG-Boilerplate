@@ -113,12 +113,11 @@ Plans:
   2. All layouts use card-based design with consistent shadows and rounded corners
   3. Visual hierarchy is clear between containers, inputs, and interactive elements
   4. Application is usable on both desktop and tablet screen sizes
-**Plans**: 3 plans
+**Plans**: 2 plans
 
 Plans:
 - [x] 06-01-PLAN.md - Tables, header, MetricCards polish with shadows and responsive scroll
 - [x] 06-02-PLAN.md - Page typography and error state consistency
-- [x] 06-03-PLAN.md - Gap closure: mobile sidebar trigger, MetricCards grid fix
 
 ## Progress
 
@@ -132,7 +131,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
 | 4. Ingestion | 3/3 | Complete | 2026-01-29 |
 | 5. Evaluation | 3/3 | Complete | 2026-01-30 |
-| 6. Design Polish | 3/3 | Complete | 2026-01-30 |
+| 6. Design Polish | 2/2 | Complete | 2026-01-30 |
 
 ---
 *Roadmap created: 2026-01-29*
@@ -142,5 +141,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 *Phase 4 planned: 2026-01-29*
 *Phase 5 planned: 2026-01-30*
 *Phase 6 planned: 2026-01-30*
-*Total plans: 18*
+*Total plans: 17*
 *Total requirements: 52*
