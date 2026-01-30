@@ -48,7 +48,7 @@ export function ComparisonTable({
   }
 
   return (
-    <div className="border rounded-lg">
+    <div className="border rounded-lg shadow-sm overflow-x-auto">
       <Table>
         <TableHeader>
           <TableRow>
@@ -65,7 +65,7 @@ export function ComparisonTable({
         </TableHeader>
         <TableBody>
           {completedEvaluations.map((evaluation) => {
-            const params = evaluation.retrieve_params as RetrieveParams
+            const params = evaluation.retrieve_params as unknown as RetrieveParams
             const summary = evaluation.results_summary
             const isSelected = selectedIds.has(evaluation.evaluation_id)
 

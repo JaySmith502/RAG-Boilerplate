@@ -21,7 +21,7 @@ export function ResultsTable({ documents, query, totalRetrieved }: ResultsTableP
         <span>Query: "{query}"</span>
         <span>{totalRetrieved} result{totalRetrieved !== 1 ? 's' : ''} found</span>
       </div>
-      <div className="border rounded-lg">
+      <div className="border rounded-lg shadow-sm overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>

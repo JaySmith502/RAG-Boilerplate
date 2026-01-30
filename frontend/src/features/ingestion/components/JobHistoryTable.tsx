@@ -131,20 +131,22 @@ export function JobHistoryTable({ jobs, onRetry }: JobHistoryTableProps) {
   }
 
   return (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          <TableHead>Job ID</TableHead>
-          <TableHead>Status</TableHead>
-          <TableHead>Progress</TableHead>
-          <TableHead>Actions</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {jobs.map((job) => (
-          <JobRow key={job.job_id} job={job} onRetry={onRetry} />
-        ))}
-      </TableBody>
-    </Table>
+    <div className="border rounded-lg shadow-sm overflow-x-auto">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Job ID</TableHead>
+            <TableHead>Status</TableHead>
+            <TableHead>Progress</TableHead>
+            <TableHead>Actions</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {jobs.map((job) => (
+            <JobRow key={job.job_id} job={job} onRetry={onRetry} />
+          ))}
+        </TableBody>
+      </Table>
+    </div>
   )
 }
