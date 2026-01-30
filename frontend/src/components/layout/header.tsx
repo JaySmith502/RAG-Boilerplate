@@ -2,7 +2,7 @@ import { ModeToggle } from "./mode-toggle"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur shadow-sm supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-14 items-center px-4">
         <div className="flex-1">
           <h1 className="text-lg font-semibold">RAG Dashboard</h1>
