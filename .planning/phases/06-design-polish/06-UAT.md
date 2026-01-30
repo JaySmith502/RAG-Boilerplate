@@ -1,5 +1,5 @@
 ---
-status: complete
+status: diagnosed
 phase: 06-design-polish
 source: 06-01-SUMMARY.md, 06-02-SUMMARY.md
 started: 2026-01-30T01:50:00Z
@@ -74,17 +74,29 @@ skipped: 0
   reason: "User reported: The sidebar disappears and isn't discoverable"
   severity: major
   test: 2
-  root_cause: ""
-  artifacts: []
-  missing: []
-  debug_session: ""
+  root_cause: "SidebarTrigger component exists but is never rendered in the Header - no UI element to toggle sidebar on mobile"
+  artifacts:
+    - path: "frontend/src/components/layout/header.tsx"
+      issue: "Missing SidebarTrigger import and usage"
+    - path: "frontend/src/components/ui/sidebar.tsx"
+      issue: "SidebarTrigger properly implemented but unused"
+  missing:
+    - "Import SidebarTrigger from @/components/ui/sidebar in header.tsx"
+    - "Add <SidebarTrigger /> to Header, left side before title"
+  debug_session: ".planning/debug/sidebar-mobile-toggle-missing.md"
 
 - truth: "MetricCards should display in 3 columns on desktop/tablet width"
   status: failed
   reason: "User reported: The MetricCards are still stacked vertically on desktop, they are stacked vertically as designed on smaller viewport"
   severity: major
   test: 5
-  root_cause: ""
-  artifacts: []
-  missing: []
-  debug_session: ""
+  root_cause: "Container max-w-5xl with excessive margins makes content area too narrow for sm:grid-cols-3 to display 3 columns effectively"
+  artifacts:
+    - path: "frontend/src/features/evaluation/components/ResultsDisplay.tsx"
+      issue: "grid-cols-1 sm:grid-cols-3 is correct but container width limits effectiveness"
+    - path: "frontend/src/features/evaluation/EvaluationPage.tsx"
+      issue: "Container max-width may be too restrictive for 3-column grid"
+  missing:
+    - "Consider md:grid-cols-3 instead of sm:grid-cols-3 for wider breakpoint"
+    - "Or adjust container width/margins to allow more content space"
+  debug_session: ".planning/debug/metriccards-grid-layout.md"
