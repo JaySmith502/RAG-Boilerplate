@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Phase: 4 of 6 (Ingestion)
-Plan: 2 of 3 in current phase
-Status: In progress
-Last activity: 2026-01-30 - Completed 04-02-PLAN.md
+Plan: 3 of 3 in current phase
+Status: Phase complete
+Last activity: 2026-01-30 - Completed 04-03-PLAN.md
 
-Progress: [███████████░░░░░] 69% (11/16 plans)
+Progress: [████████████░░░░] 75% (12/16 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
-- Average duration: 3.7 min
-- Total execution time: 41 min
+- Total plans completed: 12
+- Average duration: 3.8 min
+- Total execution time: 46 min
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [███████████░░░░░] 69% (11/16 plans)
 | 1. Foundation | 4/4 | 18 min | 4.5 min |
 | 2. Chat Interface | 3/4 | 11 min | 3.7 min |
 | 3. Retrieval Testing | 2/2 | 6 min | 3.0 min |
-| 4. Ingestion | 2/3 | 6 min | 3.0 min |
+| 4. Ingestion | 3/3 | 11 min | 3.7 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-03 (3 min), 03-01 (3 min), 03-02 (3 min), 04-01 (4 min), 04-02 (2 min)
+- Last 5 plans: 03-01 (3 min), 03-02 (3 min), 04-01 (4 min), 04-02 (2 min), 04-03 (5 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -79,6 +79,9 @@ Recent decisions affecting current work:
 - useRef tracks previous status to fire toast only on transitions (not initial load)
 - Polling stops via refetchInterval returning false when status is completed/failed
 - JobProgress compact mode for future table row display
+- Toast info for retry (backend lacks original config storage)
+- 10 second polling for job list (slower than individual job 5s)
+- Collapsible error rows only for failed jobs
 
 ### Pending Todos
 
@@ -90,6 +93,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-30T00:24:45Z
-Stopped at: Completed 04-02-PLAN.md - progress monitoring with polling and toasts
+Last session: 2026-01-30T00:27:48Z
+Stopped at: Completed 04-03-PLAN.md - job history table with expandable errors
 Resume file: None
