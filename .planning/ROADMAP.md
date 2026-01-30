@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Chat** - Session management, message display, source citations, chat interactions
 - [x] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
 - [x] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
-- [ ] **Phase 5: Evaluation** - Config form, results display, metrics comparison
+- [x] **Phase 5: Evaluation** - Config form, results display, metrics comparison
 - [ ] **Phase 6: Design Polish** - SaaS aesthetic refinement, responsive layout, visual consistency
 
 ## Phase Details
@@ -100,9 +100,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 05-01-PLAN.md - Evaluation hooks, EvaluationForm with all controls, ReuseQuestionsSelect
-- [ ] 05-02-PLAN.md - Results display with metrics cards, EvaluationSelect, config display
-- [ ] 05-03-PLAN.md - ComparisonTable with multi-select checkboxes
+- [x] 05-01-PLAN.md - Evaluation hooks, EvaluationForm with all controls, ReuseQuestionsSelect
+- [x] 05-02-PLAN.md - Results display with metrics cards, EvaluationSelect, config display
+- [x] 05-03-PLAN.md - ComparisonTable with multi-select checkboxes
 
 ### Phase 6: Design Polish
 **Goal**: The application has a cohesive, professional SaaS aesthetic that builds user trust
@@ -130,7 +130,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Chat | 3/3 | Complete | 2026-01-29 |
 | 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
 | 4. Ingestion | 3/3 | Complete | 2026-01-29 |
-| 5. Evaluation | 0/3 | Planned | - |
+| 5. Evaluation | 3/3 | Complete | 2026-01-30 |
 | 6. Design Polish | 0/2 | Not started | - |
 
 ---

@@ -62,19 +62,19 @@
 
 ### Evaluation
 
-- [ ] **EVAL-01**: Folder dropdown for evaluation dataset
-- [ ] **EVAL-02**: Top-K slider for retrieval parameter
-- [ ] **EVAL-03**: Query enhancer toggle checkbox
-- [ ] **EVAL-04**: Reranking toggle checkbox
-- [ ] **EVAL-05**: Questions per document slider
-- [ ] **EVAL-06**: Reuse questions dropdown (optional source evaluation)
-- [ ] **EVAL-07**: Start evaluation button triggers job
-- [ ] **EVAL-08**: Evaluation ID displayed after job starts
-- [ ] **EVAL-09**: Results dropdown to select completed evaluation
-- [ ] **EVAL-10**: Results display shows metrics (hit rate, MRR, avg score)
-- [ ] **EVAL-11**: Configuration used displayed with results
-- [ ] **EVAL-12**: Comparison table shows all evaluations side by side
-- [ ] **EVAL-13**: Loading/error states for evaluation operations
+- [x] **EVAL-01**: Folder dropdown for evaluation dataset
+- [x] **EVAL-02**: Top-K slider for retrieval parameter
+- [x] **EVAL-03**: Query enhancer toggle checkbox
+- [x] **EVAL-04**: Reranking toggle checkbox
+- [x] **EVAL-05**: Questions per document slider
+- [x] **EVAL-06**: Reuse questions dropdown (optional source evaluation)
+- [x] **EVAL-07**: Start evaluation button triggers job
+- [x] **EVAL-08**: Evaluation ID displayed after job starts
+- [x] **EVAL-09**: Results dropdown to select completed evaluation
+- [x] **EVAL-10**: Results display shows metrics (hit rate, MRR, avg score)
+- [x] **EVAL-11**: Configuration used displayed with results
+- [x] **EVAL-12**: Comparison table shows all evaluations side by side
+- [x] **EVAL-13**: Loading/error states for evaluation operations
 
 ### Design
 
@@ -166,19 +166,19 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INGE-10 | Phase 4 | Complete |
 | INGE-11 | Phase 4 | Complete |
 | INGE-12 | Phase 4 | Complete |
-| EVAL-01 | Phase 5 | Pending |
-| EVAL-02 | Phase 5 | Pending |
-| EVAL-03 | Phase 5 | Pending |
-| EVAL-04 | Phase 5 | Pending |
-| EVAL-05 | Phase 5 | Pending |
-| EVAL-06 | Phase 5 | Pending |
-| EVAL-07 | Phase 5 | Pending |
-| EVAL-08 | Phase 5 | Pending |
-| EVAL-09 | Phase 5 | Pending |
-| EVAL-10 | Phase 5 | Pending |
-| EVAL-11 | Phase 5 | Pending |
-| EVAL-12 | Phase 5 | Pending |
-| EVAL-13 | Phase 5 | Pending |
+| EVAL-01 | Phase 5 | Complete |
+| EVAL-02 | Phase 5 | Complete |
+| EVAL-03 | Phase 5 | Complete |
+| EVAL-04 | Phase 5 | Complete |
+| EVAL-05 | Phase 5 | Complete |
+| EVAL-06 | Phase 5 | Complete |
+| EVAL-07 | Phase 5 | Complete |
+| EVAL-08 | Phase 5 | Complete |
+| EVAL-09 | Phase 5 | Complete |
+| EVAL-10 | Phase 5 | Complete |
+| EVAL-11 | Phase 5 | Complete |
+| EVAL-12 | Phase 5 | Complete |
+| EVAL-13 | Phase 5 | Complete |
 | DSGN-01 | Phase 6 | Pending |
 | DSGN-02 | Phase 6 | Pending |
 | DSGN-03 | Phase 6 | Pending |
@@ -193,4 +193,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after Phase 4 completion*
+*Last updated: 2026-01-30 after Phase 5 completion*
