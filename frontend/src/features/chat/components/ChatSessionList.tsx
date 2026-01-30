@@ -74,7 +74,7 @@ export function ChatSessionList({
                   <SidebarMenuButton
                     isActive={selectedSessionId === session.session_id}
                     onClick={() => onSelectSession(session.session_id)}
-                    className="flex flex-col items-start gap-0.5 h-auto py-2"
+                    className="flex flex-col items-start gap-0.5 h-auto py-2 transition-colors"
                   >
                     <span className="truncate w-full text-left">
                       {getSessionTitle(session)}
