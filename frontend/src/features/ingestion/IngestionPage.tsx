@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import { CheckCircle, RefreshCw } from 'lucide-react'
+import { useState, useRef, useEffect } from 'react'
+import { CheckCircle, XCircle, RefreshCw } from 'lucide-react'
+import { toast } from 'sonner'
 import { PageContainer } from '@/components/layout/page-container'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { IngestionForm } from './components/IngestionForm'
+import { JobProgress } from './components/JobProgress'
+import { JobStatusBadge } from './components/JobStatusBadge'
 import { useStartJob } from './hooks/useStartJob'
-import type { IngestionJobRequest } from '@/types/api'
+import { useJobStatus } from './hooks/useJobStatus'
+import type { IngestionJobRequest, IngestionStatus } from '@/types/api'
 
 export function IngestionPage() {
   const [currentJobId, setCurrentJobId] = useState<string | null>(null)
+  const prevStatusRef = useRef<IngestionStatus | undefined>(undefined)
 
   const {
     mutate: startJob,
@@ -18,9 +23,35 @@ export function IngestionPage() {
     reset,
   } = useStartJob()
 
+  const { data: progress } = useJobStatus(currentJobId)
+
+  // Toast notifications on status transitions
+  useEffect(() => {
+    if (!progress) return
+
+    const currentStatus = progress.status
+    const prevStatus = prevStatusRef.current
+
+    // Only fire toast on TRANSITION (not initial load)
+    if (prevStatus !== undefined && prevStatus !== currentStatus) {
+      if (currentStatus === 'completed') {
+        toast.success('Ingestion Complete', {
+          description: `Successfully processed ${progress.processed_documents ?? 0} files`,
+        })
+      } else if (currentStatus === 'failed') {
+        toast.error('Ingestion Failed', {
+          description: progress.error_message ?? 'Unknown error',
+        })
+      }
+    }
+
+    prevStatusRef.current = currentStatus
+  }, [progress])
+
   const handleSubmit = (request: IngestionJobRequest) => {
     reset() // Clear previous error
     setCurrentJobId(null) // Clear previous job ID
+    prevStatusRef.current = undefined // Reset status tracking
     startJob(request, {
       onSuccess: (data) => {
         setCurrentJobId(data.job_id)
@@ -31,6 +62,10 @@ export function IngestionPage() {
   const handleRetry = () => {
     reset()
   }
+
+  // Determine if job is in a running state
+  const isRunning = progress &&
+    ['pending', 'processing', 'chunking', 'indexing'].includes(progress.status)
 
   return (
     <PageContainer>
@@ -57,16 +92,47 @@ export function IngestionPage() {
               isPending={isPending}
             />
 
-            {/* Job Started Success */}
+            {/* Job Status Section */}
             {currentJobId && !isPending && (
-              <div className="flex items-center gap-2 p-3 rounded-md bg-emerald-500/10 border border-emerald-500/50">
-                <CheckCircle className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
-                <span className="text-sm">
-                  Job started:{' '}
-                  <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">
-                    {currentJobId}
-                  </code>
-                </span>
+              <div className="space-y-4">
+                {/* Job ID with Status Badge */}
+                <div className="flex items-center gap-3 p-3 rounded-md bg-muted/50 border">
+                  <span className="text-sm">
+                    Job:{' '}
+                    <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">
+                      {currentJobId}
+                    </code>
+                  </span>
+                  {progress && <JobStatusBadge status={progress.status} />}
+                </div>
+
+                {/* Progress Display */}
+                {progress && (
+                  <>
+                    {/* Completed State */}
+                    {progress.status === 'completed' && (
+                      <div className="flex items-center gap-2 p-3 rounded-md bg-green-500/10 border border-green-500/50">
+                        <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400" />
+                        <span className="text-sm text-green-700 dark:text-green-300">
+                          Completed - processed {progress.processed_documents ?? 0} files
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Failed State */}
+                    {progress.status === 'failed' && (
+                      <div className="flex items-center gap-2 p-3 rounded-md bg-destructive/10 border border-destructive/50">
+                        <XCircle className="h-5 w-5 text-destructive" />
+                        <span className="text-sm text-destructive">
+                          Failed: {progress.error_message ?? 'Unknown error'}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Running State - Show Progress Bar */}
+                    {isRunning && <JobProgress progress={progress} />}
+                  </>
+                )}
               </div>
             )}
           </CardContent>
