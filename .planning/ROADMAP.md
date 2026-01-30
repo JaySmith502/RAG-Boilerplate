@@ -113,11 +113,11 @@ Plans:
   2. All layouts use card-based design with consistent shadows and rounded corners
   3. Visual hierarchy is clear between containers, inputs, and interactive elements
   4. Application is usable on both desktop and tablet screen sizes
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: Visual refinement and SaaS aesthetic
-- [ ] 06-02: Responsive layout adjustments
+- [ ] 06-01-PLAN.md - Tables, header, MetricCards polish with shadows and responsive scroll
+- [ ] 06-02-PLAN.md - Page typography and error state consistency
 
 ## Progress
 
@@ -140,5 +140,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 *Phase 3 planned: 2026-01-29*
 *Phase 4 planned: 2026-01-29*
 *Phase 5 planned: 2026-01-30*
-*Total plans: 16 (estimated)*
+*Phase 6 planned: 2026-01-30*
+*Total plans: 17*
 *Total requirements: 52*
