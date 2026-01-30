@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** External users can interact with the document Q&A system through an intuitive, modern interface
-**Current focus:** Milestone v1 complete - all 6 phases executed
+**Current focus:** Milestone v1 complete - all 6 phases executed, UAT gaps closed
 
 ## Current Position
 
 Phase: 6 of 6 (Design Polish)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-01-30 - Completed 06-01-PLAN.md and 06-02-PLAN.md
+Plan: 3 of 3 in current phase
+Status: Phase complete (UAT gaps closed)
+Last activity: 2026-01-30 - Completed 06-03-PLAN.md (UAT gap closure)
 
-Progress: [████████████████] 100% (17/17 plans)
+Progress: [████████████████] 100% (18/18 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 17
+- Total plans completed: 18
 - Average duration: 3.9 min
-- Total execution time: 67 min
+- Total execution time: 70 min
 
 **By Phase:**
 
@@ -32,10 +32,10 @@ Progress: [████████████████] 100% (17/17 plans)
 | 3. Retrieval Testing | 2/2 | 6 min | 3.0 min |
 | 4. Ingestion | 3/3 | 11 min | 3.7 min |
 | 5. Evaluation | 3/3 | 11 min | 3.7 min |
-| 6. Design Polish | 2/2 | 10 min | 5.0 min |
+| 6. Design Polish | 3/3 | 13 min | 4.3 min |
 
 **Recent Trend:**
-- Last 5 plans: 05-01 (4 min), 05-02 (4 min), 05-03 (3 min), 06-01 (5 min), 06-02 (5 min)
+- Last 5 plans: 05-02 (4 min), 05-03 (3 min), 06-01 (5 min), 06-02 (5 min), 06-03 (3 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -95,6 +95,8 @@ Recent decisions affecting current work:
 - overflow-x-auto enables horizontal scroll on narrow viewports
 - rounded-xl on MetricCard matches Card component radius
 - transition-colors on session list for smooth hover effects
+- md:hidden for mobile-only SidebarTrigger visibility (768px breakpoint)
+- md:grid-cols-3 for sidebar-aware grids (not sm: which is 640px)
 
 ### Pending Todos
 
@@ -106,6 +108,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-30T01:42:00Z
-Stopped at: Completed Phase 6 (Design Polish) - 06-01-PLAN.md and 06-02-PLAN.md
+Last session: 2026-01-30T02:27:15Z
+Stopped at: Completed Phase 6 (Design Polish) - 06-03-PLAN.md (UAT gap closure)
 Resume file: None
