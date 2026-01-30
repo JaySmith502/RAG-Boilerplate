@@ -78,12 +78,12 @@
 
 ### Design
 
-- [ ] **DSGN-01**: Modern SaaS aesthetic (Linear/Notion-inspired)
-- [ ] **DSGN-02**: Card-based layouts with subtle shadows
-- [ ] **DSGN-03**: Rounded corners on all interactive elements
-- [ ] **DSGN-04**: Clear visual hierarchy between containers and inputs
-- [ ] **DSGN-05**: Consistent spacing and typography
-- [ ] **DSGN-06**: Responsive layout for desktop and tablet
+- [x] **DSGN-01**: Modern SaaS aesthetic (Linear/Notion-inspired)
+- [x] **DSGN-02**: Card-based layouts with subtle shadows
+- [x] **DSGN-03**: Rounded corners on all interactive elements
+- [x] **DSGN-04**: Clear visual hierarchy between containers and inputs
+- [x] **DSGN-05**: Consistent spacing and typography
+- [x] **DSGN-06**: Responsive layout for desktop and tablet
 
 ## v2 Requirements
 
@@ -179,12 +179,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EVAL-11 | Phase 5 | Complete |
 | EVAL-12 | Phase 5 | Complete |
 | EVAL-13 | Phase 5 | Complete |
-| DSGN-01 | Phase 6 | Pending |
-| DSGN-02 | Phase 6 | Pending |
-| DSGN-03 | Phase 6 | Pending |
-| DSGN-04 | Phase 6 | Pending |
-| DSGN-05 | Phase 6 | Pending |
-| DSGN-06 | Phase 6 | Pending |
+| DSGN-01 | Phase 6 | Complete |
+| DSGN-02 | Phase 6 | Complete |
+| DSGN-03 | Phase 6 | Complete |
+| DSGN-04 | Phase 6 | Complete |
+| DSGN-05 | Phase 6 | Complete |
+| DSGN-06 | Phase 6 | Complete |
 
 **Coverage:**
 - v1 requirements: 52 total
@@ -193,4 +193,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-30 after Phase 5 completion*
+*Last updated: 2026-01-30 after Phase 6 completion*

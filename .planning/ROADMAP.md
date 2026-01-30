@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Retrieval Testing** - Query form, parameter controls, results table with expansion
 - [x] **Phase 4: Ingestion** - Folder selection, job start, progress monitoring, job history
 - [x] **Phase 5: Evaluation** - Config form, results display, metrics comparison
-- [ ] **Phase 6: Design Polish** - SaaS aesthetic refinement, responsive layout, visual consistency
+- [x] **Phase 6: Design Polish** - SaaS aesthetic refinement, responsive layout, visual consistency
 
 ## Phase Details
 
@@ -116,8 +116,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md - Tables, header, MetricCards polish with shadows and responsive scroll
-- [ ] 06-02-PLAN.md - Page typography and error state consistency
+- [x] 06-01-PLAN.md - Tables, header, MetricCards polish with shadows and responsive scroll
+- [x] 06-02-PLAN.md - Page typography and error state consistency
 
 ## Progress
 
@@ -131,7 +131,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Retrieval Testing | 2/2 | Complete | 2026-01-29 |
 | 4. Ingestion | 3/3 | Complete | 2026-01-29 |
 | 5. Evaluation | 3/3 | Complete | 2026-01-30 |
-| 6. Design Polish | 0/2 | Not started | - |
+| 6. Design Polish | 2/2 | Complete | 2026-01-30 |
 
 ---
 *Roadmap created: 2026-01-29*
